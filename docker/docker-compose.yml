@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  qiita_cli:
+    build: .
+    container_name: 'Qiita_CLI'
+    working_dir: '/root/'
+    tty: true
+    volumes: 
+      - '../public:/root/public'
